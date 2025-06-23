@@ -15,6 +15,14 @@
 // saluerNom("Juliette")
 // saluerNom("Marley")
 
+// EXO 10 
+
+// const saluerNom = (nom) => console.log("bonjour, " + nom)
+
+// saluerNom("Mathieu")
+// saluerNom("Juliette")
+// saluerNom("Marley")
+
 // EXO 3
 
 // function calculerCarre(nombre) {
@@ -35,6 +43,20 @@
 
 // additionner()
 // console.log(resultat)
+
+// EXO 10
+
+// const additionner = (a, b) => {
+//   a = Number(prompt("nombre 1"))
+//   b= Number(prompt("nombre 2"))
+//   resultat = a + b
+//   return resultat
+// }
+
+// additionner()
+// console.log(resultat)
+
+
 
 // EXO 5
 
@@ -114,6 +136,30 @@
 //   console.log(nombre + " et " + index);
 // });
 
-// EXO 10
+// EXO 11
 
+// setTimeout(() => {
+//   console.log("Ce message apparaît après 2 secondes !");
+// }, 2000);
 
+// PROJET 1
+
+let tableau = []
+let idUser = 1
+
+function ajouterTache(description) {
+  const tache = {
+    id: idUser++,
+    description: description,
+  }
+  tableau.push(tache)
+  console.log(`Tâche : ${tache.description} (ID: ${tache.id})`)
+}
+
+function supprimerTache(id) {
+  tableau.pop()
+}
+
+function afficherTaches() {
+
+}
